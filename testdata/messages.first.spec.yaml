@@ -1,0 +1,10 @@
+method: First
+items:
+  en:
+    messages:
+      greeting: "Hello, {{.Name}}!"
+      farewell: "Goodbye, {{.Name}}!"
+  ru:
+    messages:
+      greeting: "Привет, {{.Name}}!"
+      farewell: "Пока, {{.Name}}!"

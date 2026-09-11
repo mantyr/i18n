@@ -1,0 +1,32 @@
+ru:
+  ttl:
+    days:
+      one:  "{{.}} день"
+      few:  "{{.}} дня"
+      many: "{{.}} дней"
+    hours:
+      one:  "{{.}} час"
+      few:  "{{.}} часа"
+      many: "{{.}} часов"
+    minutes:
+      one:  "{{.}} минута"
+      few:  "{{.}} минуты"
+      many: "{{.}} минут"
+    seconds:
+      one:  "{{.}} секунда"
+      few:  "{{.}} секунды"
+      many: "{{.}} секунд"
+en:
+  ttl:
+    days:
+      one:   "{{.}} day"
+      other: "{{.}} days"
+    hours:
+      one:   "{{.}} hour"
+      other: "{{.}} hours"
+    minutes:
+      one:   "{{.}} minute"
+      other: "{{.}} minutes"
+    seconds:
+      one:   "{{.}} second"
+      other: "{{.}} seconds"

@@ -1,0 +1,8 @@
+en:
+  page:
+    title: "Welcome, {{.Name}}!"
+    subtitle: "You have new messages"
+de:
+  page:
+    title: "Hallo, {{.Name}}!"
+    subtitle: "Sie haben neue Nachrichten"

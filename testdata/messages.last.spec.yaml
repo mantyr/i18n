@@ -1,0 +1,9 @@
+method: Last
+items:
+  messages:
+    greeting:
+      en: "Hello, {{.Name}}!"
+      ru: "Привет, {{.Name}}!"
+    farewell:
+      en: "Goodbye, {{.Name}}!"
+      ru: "Пока, {{.Name}}!"

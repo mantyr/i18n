@@ -1,0 +1,10 @@
+messages:
+  group1:
+    name:
+      ru: "messages.group1.name@ru, {{.Name}}"
+      en: "messages.group1.name@en, {{.Name}}"
+      group2:
+        en: "messages.group1.name.group2@en, {{.Name}}"
+      de:
+        en: "messages.group1.name.de@en, {{.Name}}"
+        de: "test, {{.Other}}"

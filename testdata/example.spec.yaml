@@ -1,0 +1,9 @@
+method: Last
+items:
+  page:
+    title:
+      en: "Welcome, {{.Name}}!"
+      de: "Hallo, {{.Name}}!"
+    subtitle:
+      en: "You have new messages"
+      de: "Sie haben neue Nachrichten"

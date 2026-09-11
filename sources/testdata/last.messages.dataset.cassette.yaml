@@ -1,0 +1,20 @@
+- lang: de
+  key: messages.group1.name.de
+  result: ""
+  resulterror: 'render error: template: messages.group1.name.de@de:1:8: executing "messages.group1.name.de@de" at <.Other>: can''t evaluate field Other in type struct { Name string }'
+- lang: en
+  key: messages.group1.name
+  result: messages.group1.name@en, test
+  resulterror: <nil>
+- lang: en
+  key: messages.group1.name.de
+  result: messages.group1.name.de@en, test
+  resulterror: <nil>
+- lang: en
+  key: messages.group1.name.group2
+  result: messages.group1.name.group2@en, test
+  resulterror: <nil>
+- lang: ru
+  key: messages.group1.name
+  result: messages.group1.name@ru, test
+  resulterror: <nil>
