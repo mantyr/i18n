@@ -3,6 +3,7 @@ package i18n
 import (
 	"errors"
 	"fmt"
+	"github.com/mantyr/i18n/internal/registers"
 )
 
 type catalog struct {
@@ -154,11 +155,11 @@ func (c *catalog) Languages() []Lang {
 // serves every language. Call before Parse, since Funcs must be set before
 // the template is parsed.
 func (c *catalog) Register(args ...any) error {
-	name, templates := SplitNameAndTemplates(DefaultI18nName, args)
+	name, templates := registers.SplitNameAndTemplates(DefaultI18nName, args)
 	funcs := map[string]any{
 		name: c.Execute,
 	}
-	return RegisterFuncs(funcs, templates...)
+	return registers.RegisterFuncs(funcs, templates...)
 }
 
 func (c *catalog) Execute(lang Lang, key Key, data interface{}) (string, error) {

@@ -5,6 +5,8 @@ import (
 	"fmt"
 
 	"github.com/mantyr/i18n"
+	"github.com/mantyr/i18n/internal/registers"
+
 	pl "golang.org/x/text/feature/plural"
 	"golang.org/x/text/language"
 )
@@ -66,11 +68,11 @@ func (p *plural) SetCatalog(catalog i18n.Catalog) i18n.Plural {
 //
 // The language is passed explicitly in the template.
 func (p *plural) Register(args ...any) error {
-	pluralName, templates := i18n.SplitNameAndTemplates(i18n.DefaultPluralName, args)
+	pluralName, templates := registers.SplitNameAndTemplates(i18n.DefaultPluralName, args)
 	funcs := map[string]any{
 		pluralName: p.Execute,
 	}
-	return i18n.RegisterFuncs(funcs, templates...)
+	return registers.RegisterFuncs(funcs, templates...)
 }
 
 func (p *plural) Execute(lang i18n.Lang, key i18n.Key, value int) (string, error) {

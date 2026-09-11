@@ -1,4 +1,4 @@
-package i18n
+package registers
 
 import (
 	"fmt"
@@ -22,7 +22,7 @@ func RegisterFuncs(funcs map[string]any, args ...any) error {
 		case *texttemplate.Template:
 			t.Funcs(texttemplate.FuncMap(funcs))
 		default:
-			return fmt.Errorf("Register: unsupported argument type %T, want *html/template.Template or *text/template.Template", arg)
+			return fmt.Errorf("register: unsupported argument type %T, want *html/template.Template or *text/template.Template", arg)
 		}
 	}
 	return nil
